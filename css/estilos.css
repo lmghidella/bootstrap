@@ -6,7 +6,7 @@
 }
 
 .body{
-    background-color: #310900;
+    background-color: rgb(18, 97, 18);
 }
 
 header {
@@ -88,7 +88,11 @@ header {
 .productos{
     background-image: radial-gradient(circle at 29.63% 20.91%, #8c7d0f 0, #8a710b 10%, #86640a 20%, #7e5609 30%, #724709 40%, #643708 50%, #552805 60%, #471c00 70%, #3b1200 80%, #310900 90%, #2a0000 100%);
 }
+.navbar-nav{
+    background-color: rgb(18, 97, 18)!important;
+    margin: 0%;
 
+}
 .textoTecnoAgro p{
     height: 100%;
     text-align: left;
@@ -143,6 +147,10 @@ header {
     border: none;
     border-radius: 4px;
     cursor: pointer;
+}
+.navbar-nav
+{
+    background-color: gre;
 }
 .servicios
 {
