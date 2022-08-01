@@ -21,6 +21,12 @@ header {
     /*Z-INDEX*/
     z-index: 2;
 }
+#SinPadding{
+   padding:0;
+
+
+}
+
 
 
 .botonera {
@@ -91,7 +97,11 @@ header {
 .navbar-nav{
     background-color: rgb(18, 97, 18)!important;
     margin: 0%;
+    c
 
+}
+.container-fluid header nav ul li a{
+    color: orange !important;
 }
 .textoTecnoAgro p{
     height: 100%;
