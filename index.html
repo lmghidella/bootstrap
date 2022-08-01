@@ -11,7 +11,7 @@
         integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <link rel="stylesheet" href="css/estilos.css">
 </head>
-<body class=class="container-fluid">
+<body class="container-fluid">
     <!-- EL HEADER LO VAMOS A MAQUETAR CON FLEXBOX -->
     <header>
         <div>
@@ -28,87 +28,95 @@
             </ul>
         </nav>
     </header>
-    <!-- SECCIÓN SERVICIOS -->
+   
+
+    <img class="img-fluid" src="img/tractor3.jpg" alt=""> 
     <div class="row">
-        <div class="col-xl-12 col-md-12 col-sm-12 text-center">
-            <img class="imagenEncabezado" src="img/tractor3.jpg" alt="">
-        </div>
-    </div>
-    <!--  
-        <div class="col-xl-3 col-md-6 col-sm-12">
-            <p>2) Esto es una columna</p>
-            <img src="https://placekitten.com/96/139" alt="imagen de gatito">
-        </div>
-
-        <div class="col-xl-3 col-md-6 col-sm-12">
-            <p>3) Esto es una columna</p>
-            <img src="https://placekitten.com/96/139" alt="imagen de gatito">
-        </div>
-
-        <div class="col-xl-3 col-md-6 col-sm-12">
-            <p>3) Esto es una columna</p>
-            <img src="https://placekitten.com/96/139" alt="imagen de gatito">
-        </div>
-    </div>
-  -->  
-  <div class="row">
-    <div class="col-xl-12 col-md-12 col-sm-12 text-center">  
-        <section id="galeria">
-            <div class="contenedor">
-                <h2>Principales productos</h2>
-                <div class="imagenContenedor">
-                    <div class="banderillero">
-                        <img class="imagenGaleria imagenUno" src="img/banderillero.jpg" alt="">
-                        <p>Banderillero Satelital</p>
+        <div class="col-xl-6 col-md-6 col-sm-12 text-center"> 
+          
+                <p class="fw-bold fs-3 p-2 bg-dark text-white">Productos</p>
+                 <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel"> 
+                    <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img class="imagenGaleria" src="img/banderillero.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                        <h5>Banderillero Satelital</h5>
+                        <p>Para pulverizar con precisiones superiores a 50 cm</p>
+                        </div>
                     </div>
-                    <div class="dosificador">
-                        <img class="imagenGaleria imagenUno" src="img/dosificador.png" alt="">
-                        <p>Dosificador</p>
+                    <div class="carousel-item">
+                        <img class="imagenGaleria" src="img/dosificador.png" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                        <h5>Dosificador de siembra</h5>
+                        <p>Aplique siembra variable georeferenciada</p>
+                        </div>
                     </div>
-                    <div class="Monitoreo de siembra">
-                        <img class="imagenGaleria imagenUno" src="img/monitoreo.jpg" alt="">
-                        <p>Monitoreo de siembra</p>
+                    <div class="carousel-item">
+                        <img class="imagenGaleria" src="img/monitoreo.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                        <h5>Monitoreo de Siembra</h5>
+                        <p>Controle la dosis de grano pico por pico</p>
+                        </div>
                     </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                    </button>
                 </div>
-            </div>
-        </section>
-    </div>
-  </div>
+        </div>
+          
+        <div class="col-xl-6 col-md-6 col-sm-12 text-center">
+            <div class="textoTecnoAgro">
+                <p class="fw-bold fs-3">Agricultura de Precisión Tecno Agro</p> 
+                <p class="fs-6">Sólo Tecno Agro conecta personas, inteligencia, tecnología y máquinas para obtener mayor eficiencia y rentabilidad de forma sustentable, aplicando:</p>
+                 <ul> 
+                    <li>El elemento correcto</li>
+                    <li>En el lugar correcto</li>
+                    <li>En la medida correcta</li>
+                    <li>De forma correcta</li>
+                    <li>En el tiempo correcto</li>
 
-        
+                </ul>
+            </div>
+        </div>
+    </div>
+
+</div>
+       
 <div class="row">
     <div class="col-xl-6 col-md-12 col-sm-12 text-center">  
+        <div class="servicios">        
+         <p class="fw-bold fs-2 ">Servicios</p>
+         <p class="fs-3 fw-bold">Muestreo de Suelos</p> 
+         <p class="fs-3 fw-bold">Mapa de altimetría</p> 
+         <p class="fs-3 fw-bold">Mapa de índice verde medido con drones</p> 
 
-        <section id="servicios">
-
-            <div class="contenedor">
-                <h1>Carrousel con principales servicios</h1>
-                <h2>Servicio de pulverización por ha</h2>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit dicta quod aut ex tempora suscipit porro quas, debitis asperiores totam illum quibusdam laboriosam nostrum culpa iste minima facere provident sed.
-                </p>
-            </div>
-        </section>
+        </div>
     </div>
-
     <div class="col-xl-6 col-md-12 col-sm-12 text-center"> 
-        <section id="contacto" class="contenedor">
-            <h2>Contacto</h2>
-            <p>En breve un asesor se estará comunicando con vos</p>
-            <form class="formulario">
-                <div class="contenedorInput">
-                    <input class="campo" type="text" placeholder="Ingrese su nombre">
-                    <input class="campo" type="text" placeholder="Ingrese su apellido">
-                    <input class="campo" type="email" placeholder="Ingrese su email">
-                </div>
-                <textarea class="campo" name="mensaje" id="mensaje" cols="30" rows="10"
-                    placeholder="Ingrese su mensaje"></textarea>
-                <input class="boton" type="submit">
-                <input class="boton" type="reset">
-            </form>
-        </section>
+        <h3>Formulario</h3>
+        <form>
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Correo Electrónico</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Nombre Completo</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+            <button type="reset" class="btn btn-primary">Borrar todo</button>
+        </form>
     </div>
 </div>
-
+<h2><br></h2>
     <div class="botonWhatsApp">
         <img src="img/logoWhatsapp.png" alt="">
     </div>
@@ -130,7 +138,10 @@
         </div>
     </footer>
 
-    <script src="https://kit.fontawesome.com/ac484d389e.js" crossorigin="anonymous"></script>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

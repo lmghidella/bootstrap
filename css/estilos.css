@@ -5,8 +5,8 @@
     padding: 0;
 }
 
-body {
-    font-family: 'Roboto', sans-serif;
+.body{
+    background-color: #310900;
 }
 
 header {
@@ -16,7 +16,12 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: sticky;
+    top: 0;
+    /*Z-INDEX*/
+    z-index: 2;
 }
+
 
 .botonera {
     margin-right: 20px;
@@ -71,8 +76,44 @@ header {
     filter: grayscale(50%);
 }
 
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    height: 40px;
+    width: 40px;
+    outline: black;
+    background-color: rgba(0, 0, 0, 0.8);
+    background-size: 100%, 100%;
+    border-radius: 50%;
+    border: 1px solid black;
+}
+.productos{
+    background-image: radial-gradient(circle at 29.63% 20.91%, #8c7d0f 0, #8a710b 10%, #86640a 20%, #7e5609 30%, #724709 40%, #643708 50%, #552805 60%, #471c00 70%, #3b1200 80%, #310900 90%, #2a0000 100%);
+}
 
+.textoTecnoAgro p{
+    height: 100%;
+    text-align: left;
+    padding-left: 3%;
+}
+.textoTecnoAgro ul{
+    height: 100%;
+    text-align: left;
+    padding-left: 5%;
+  
+}
+.textoTecnoAgro{
+ background-image: radial-gradient(circle at 87.5% 12.5%, #b6ff43 0, #95ff45 16.67%, #69fa45 33.33%, #0ced43 50%, #00e044 66.67%, #00d54b 83.33%, #00ce56 100%); 
 
+}
+.carousel-caption {
+    position: absolute; 
+    padding: 5px;
+    color: whitesmoke;
+    text-align:center;
+    background-color: rgba(83, 79, 79, 0.4); /* Añadir para conseguir el fondo con opacidad */
+    font-weight: bold;
+    
+   
+}
 .imagenContenedor {
     display: flex;
     justify-content: center;
@@ -103,7 +144,19 @@ header {
     border-radius: 4px;
     cursor: pointer;
 }
-
+.servicios
+{
+    opacity: 0.8;
+  background-image:url("../img/servicios.png");  
+  background-size: 100% 100%;
+  text-shadow: white;
+  
+    
+}
+.servicios p{
+   
+    color:blue;
+}
 
 /* SECCION FOOTER */
 
@@ -114,6 +167,7 @@ footer {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    padding-top: 15px;
 }
 
 footer ul li {
@@ -133,6 +187,7 @@ footer h4 {
 }
 footer p{
     color:whitesmoke;
+    
 }
 
 /* BOTON DE WHATSAPP */
@@ -144,60 +199,6 @@ footer p{
     right: 10px;
 }
 
-/* APLICAMOS GRID AREA */
-@media (min-width:1024px) { 
-    .bodyPadreGrid {
-        display: grid;
-        grid-template-areas: 
-        "header header header"
-        "imagenCentral imagenCentral imagenCentral"
-        "galeria galeria galeria"
-        "servicios servicios contacto"
-        "servicios servicios contacto"
-        "footer footer footer"
-        ;    
-    } 
-}
 
-@media (min-width:768px) {
-    .bodyPadreGrid {
-        display: grid;
-        grid-template-areas: 
-        "header header"
-        "imagenCentral imagenCentral"
-        "galeria galeria"
-        "servicios contacto"
-        "servicios contacto"
-        "footer footer"
-        ;    
-    } 
-}
 
-header {
-    grid-area: header;
-    position: sticky;
-    top: 0;
-    /*Z-INDEX*/
-    z-index: 2;
-}
-
-.contenedorImagen {
-    grid-area: imagenCentral;
-}
-
-#servicios {
-    grid-area: servicios;
-}
-
-#galeria {
-    grid-area: galeria;
-}
-
-#contacto {
-    grid-area: contacto;
-}
-
-#footer {
-    grid-area: footer;
-}
 
